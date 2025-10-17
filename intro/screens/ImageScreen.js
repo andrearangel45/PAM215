@@ -1,0 +1,12 @@
+import { Text, StyleSheet, View } from 'react-native'
+import React, { Component } from 'react'
+
+export default function TextInputAlestScreen() {
+    return(
+        <View>
+            <Text>Proximamente por Cahrlie</Text>
+        </View>
+    )
+}
+
+const styles = StyleSheet.create({})

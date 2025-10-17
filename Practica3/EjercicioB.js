@@ -1,6 +1,6 @@
 function verificarUsuario(usuario) {
-    return new Promise((res, err) => {
-        if(usuario === "admin"){
+    return new Promise((res, err) => {  // dos iguales == solo es para parecido
+        if(usuario === "admin"){ /// usamos 3 iguales === para comparar algo que sea completamente igual 
             res( "Acceso concedido");
         }else{
             err ("Acceso denegado");
