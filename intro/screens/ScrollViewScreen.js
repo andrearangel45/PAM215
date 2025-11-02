@@ -14,7 +14,7 @@ export default function ScrollViewScreen() {
       showsVerticalScrollIndicator={true}
     >
       <Text style={styles.titulo}>Practica ScrollView </Text>
-      <Text style={styles.titulo2}>Ejemplo de desplazamiento vertical</Text>
+      <Text style={styles.titulo2}>Ejemplo del desplazamiento vertical</Text>
 
       <View>
         <Button
