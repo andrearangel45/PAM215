@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 export default function FlatListScreen() {
     return(
         <View>
-            <Text>Proximamente por Diego</Text>
+            <Text>Proximamente por Cahrlie</Text>
         </View>
     )
 }

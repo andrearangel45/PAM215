@@ -23,12 +23,12 @@ export default function ImageScreen() {
     return(
       <Animated.View style={[styles.splashContainer,{opacity: desvanecido} ]}>
         <ImageBackground
-          source = {require('../assets/unholy.jpg')}
+          source = {require('../assets/sand.jpg')}
           resizeMode='cover'
           style={styles.splashImage}
           
         >
-          <Text style={styles.splashText}>cargando..</Text>
+          <Text style={styles.splashText}>Cargando..</Text>
         </ImageBackground>
       </Animated.View>
     );
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
   splashText:{
     position:'absolute',
     fontSize:30,
-    color:'#f6eeeeff',
+    color:'#060606ff',
   },
   textoContainer:{
     backgroundColor:'#201f1fff',

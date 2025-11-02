@@ -35,17 +35,21 @@ export default function MenuScreen(){
             return <ButtomScreen />;
         case 'menu':
             return (
-                <View>
-                    <Text>Menu de practicas</Text>
-                    <Button onPress={() => setScreen('contador')} title='Pract:Contador' />
-                    <Button onPress={() => setScreen('botones')} title='Pract:Buttons' />
-                    <Button onPress={() => setScreen('textin')} title='Pract:Text input y Alert' />
-                    <Button onPress={() => setScreen('image')} title='Pract:ImageBackground y SlapshScreen' />
-                    <Button onPress={() => setScreen('scroll')} title='Pract:ScrollView' />
-                    <Button onPress={() => setScreen('activity')} title='Pract:ActivityIndicator' />
-                    <Button onPress={() => setScreen('flatlist')} title='Pract:FlatList y Section List' />
-                    <Button onPress={() => setScreen('modal')} title='Pract:Modal' />
-                    <Button onPress={() => setScreen('butsheet')} title='Pract:Buttom Sheet' />
+                <View style={styles.container}>
+                    <Text style={styles.titulo}> - Menu de practicas - </Text>
+            
+                    <View style={styles.contenedorBotones}>
+                    <Button color="#ecb2caff" onPress={() => setScreen('contador')} title='Pract:Contador' />
+                    <Button color="#ecb2caff" onPress={() => setScreen('botones')} title='Pract:Buttons' />
+                    <Button color="#ecb2caff" onPress={() => setScreen('textin')} title='Pract:Text input y Alert' />
+                    <Button color="#ecb2caff" onPress={() => setScreen('image')} title='Pract:ImageBackground y SlapshScreen' />
+                    <Button color="#ecb2caff" onPress={() => setScreen('scroll')} title='Pract:ScrollView' />
+                    <Button color="#ecb2caff" onPress={() => setScreen('activity')} title='Pract:ActivityIndicator' />
+                    <Button color="#ecb2caff" onPress={() => setScreen('flatlist')} title='Pract:FlatList y Section List' />
+                    <Button color="#ecb2caff" onPress={() => setScreen('modal')} title='Pract:Modal' />
+                    <Button color="#ecb2caff" onPress={() => setScreen('butsheet')} title='Pract:Buttom Sheet' />
+                    </View>
+                    
                     
                 </View>
             );
@@ -56,6 +60,23 @@ export default function MenuScreen(){
 }
 
 const styles = StyleSheet.create({
+    container: {
+    flex: 1,
+    backgroundColor: '#f5e4f0ff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  contenedorBotones:{ 
+    marginTop:15, 
+    flexDirection:'column', 
+    gap:15,
+  },
+  titulo:{
+    fontFamily:'Courier',
+    fontSize:40,
+    color:'#3e0327ff',
+    fontWeight:'500',
+  },
     
 })
 
